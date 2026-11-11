@@ -1,0 +1,125 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #eef4fb 0%, #f9fbfd 260px);
+  color: #1b2430;
+}
+
+.app {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1.2rem 4rem;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+h1 { margin: 0; font-size: 1.5rem; }
+
+.unit-toggle {
+  border: 1px solid #c7d3e0;
+  background: #fff;
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.unit-toggle:hover { background: #eef4fb; }
+
+.search { position: relative; margin-bottom: 1rem; }
+
+.search input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid #c7d3e0;
+  font-size: 1rem;
+}
+
+.hint { color: #6b7a8f; font-size: 0.85rem; margin: 0.4rem 0 0; }
+.msg-error { color: #b3391d; font-size: 0.85rem; margin: 0.4rem 0 0; }
+
+.suggestions {
+  list-style: none;
+  margin: 0.4rem 0 0;
+  padding: 0;
+  border: 1px solid #c7d3e0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+.suggestions li {
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+  border-bottom: 1px solid #eef1f5;
+}
+.suggestions li:last-child { border-bottom: none; }
+.suggestions li:hover { background: #eef4fb; }
+
+.historique {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: #6b7a8f;
+  margin-bottom: 1.5rem;
+}
+.historique button {
+  border: 1px solid #c7d3e0;
+  background: #fff;
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.historique button:hover { background: #eef4fb; }
+
+.meteo { margin-top: 1rem; }
+
+.courante {
+  background: #fff;
+  border: 1px solid #e1e7ee;
+  border-radius: 14px;
+  padding: 1.2rem;
+  text-align: center;
+}
+.courante h2 { margin: 0 0 0.6rem; font-size: 1.1rem; color: #445; }
+
+.temp-actuelle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.temp-actuelle img { width: 64px; height: 64px; }
+.temp-actuelle .valeur { font-size: 2.4rem; font-weight: 700; }
+.temp-actuelle .description { text-transform: capitalize; color: #556; }
+
+.details { color: #6b7a8f; font-size: 0.9rem; margin: 0.6rem 0 0; }
+
+.previsions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+.jour {
+  background: #fff;
+  border: 1px solid #e1e7ee;
+  border-radius: 10px;
+  padding: 0.7rem 0.4rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+.jour img { width: 40px; height: 40px; }
+.jour .date { display: block; color: #6b7a8f; margin-bottom: 0.2rem; }
+.jour .temps { display: block; font-weight: 600; margin-top: 0.2rem; }
+
+.empty { color: #8492a6; text-align: center; margin-top: 3rem; }
