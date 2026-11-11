@@ -1,5 +1,15 @@
 # Travaux pratiques JavaScript
 
+## TP6 — Annuaire d'étudiants
+
+Application Vue de gestion et de consultation d'un annuaire d'étudiants.
+
+```powershell
+cd TP6
+npm install
+npm run dev
+```
+
 ## TP7 — Explorateur de pays
 
 Application Vue de recherche et de consultation de pays.
